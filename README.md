@@ -1,4 +1,4 @@
-# REPO NAME: EagleTemplate-new
+# REPO NAME:MRCS-Dual-3-Position-Semaphore-Controller
 ## License: Creative Commons Attribution-NonCommercial-ShareAlike
 
 MRCS-Dual-3-Position-Semaphore-Controller based on Arduino Nano
