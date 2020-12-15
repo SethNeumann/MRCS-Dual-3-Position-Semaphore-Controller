@@ -1,32 +1,13 @@
 # REPO NAME: EagleTemplate-new
 ## License: Creative Commons Attribution-NonCommercial-ShareAlike
 
-Delete one of the license lines above, and replace this line and following with the contents of the doc.md file
+MRCS-Dual-3-Position-Semaphore-Controller based on Arduino Nano
 
-### How to use this template:
-
-  1. Create a repo using this template, 
-  2. Use eagle to create your project
-  3. Edit the other text files to describe your project
-  4. git add .
-  5. git commit -m "add to git"
-  6. git tag -a 1.0 -m 1.0
-  7. git push origin 1.0
-  
-
-This is a template for new eagle designs.
-It includes a blank schematic with a title block ready for editing and a
-default PCB that uses the SPCoast.lbr's BOARD component, Fiducials and an OSHW logo.
-
-First line: A short description of the project, used as a subtitle or tagline
-
-Remaining lines: a verbose changelog of what makes this "git version" different from the last.
-Use this space (in Markdown format) to describe the context and details of the changes.
-This section should be 5 to 20 lines of interesting detail; each version tab in the project will 
-display this text to help the reader understand why this version is differnet...
-
-The published project on the SPCoast.github.io website will
-include the relevant git commit messages as a terse, high level
-changelog, so don't replicate those messages here.
-
-
+Based on the PCR Arduino clinic board which was a project board for a basic Arduino class.  
+- 69x100 mm
+- cutouts for 2 SG90 servos facing in so they can be used for a 2 bladed semaphore or train order board
+or with the servo horns facing out it should be useful as a grade crossing controller in HO or N
+- Each servo has 3 analog inputs for adjustment pots, to set positions for STOP, APPPROACH and CLEAR
+3 active low inputs for blade position (but the code will be at the STOP position in the abscence of 
+any input, so you could get away with 2 inputs) to keep the same inputs as a search light or type "D" 
+stoplight style signal, and an output for a servo
