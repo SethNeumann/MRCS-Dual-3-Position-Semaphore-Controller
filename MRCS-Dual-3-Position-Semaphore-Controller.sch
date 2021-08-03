@@ -2747,7 +2747,7 @@ Copal</description>
 <attribute name="PCR_CLINIC" value=""/>
 </part>
 <part name="NANO" library="Arduino-clone-scn" deviceset="NANO" device=""/>
-<part name="J1" library="SPCoast" deviceset="CONNECTOR-DC-POWER" device="-RA" value="9 VDC"/>
+<part name="J1" library="SPCoast" deviceset="CONNECTOR-DC-POWER" device="-RA" value="5 VDC"/>
 <part name="GND1" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="D1" library="SPCoast" deviceset="LED*" device="LED3MM" value="White"/>
 <part name="D2" library="SPCoast" deviceset="LED*" device="LED3MM" value="White"/>
@@ -2758,7 +2758,6 @@ Copal</description>
 <part name="SUPPLY4" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="SUPPLY8" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="SUPPLY9" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
-<part name="SUPPLY10" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="SUPPLY11" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="GND4" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND6" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -2787,8 +2786,6 @@ Copal</description>
 <part name="GND15" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY17" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="R6" library="MRCS" deviceset="TRIM_US-" device="RS3" value="10K"/>
-<part name="SUPPLY18" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
-<part name="SUPPLY19" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="S4" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device="PTH"/>
 <part name="GND16" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND17" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -2798,20 +2795,20 @@ Copal</description>
 <part name="GND19" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="S1" library="SparkFun-Electromechanical" deviceset="SWITCH-MOMENTARY-2" device="PTH"/>
 <part name="GND20" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="J2" library="SPCoast" deviceset="CONNECTOR-M08" device="LOCK"/>
+<part name="J2" library="SPCoast" deviceset="CONNECTOR-M08" device="LOCK" value="Input"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 <text x="71.12" y="119.38" size="1.778" layer="91">has internal LED</text>
-<text x="-5.08" y="114.3" size="1.778" layer="91">Red pot 1</text>
-<text x="2.54" y="106.68" size="1.778" layer="91">Yellow pot 1</text>
-<text x="15.24" y="104.14" size="1.778" layer="91">Green pot 1</text>
-<text x="25.4" y="101.6" size="1.778" layer="91">Red pot 2</text>
-<text x="40.64" y="93.98" size="1.778" layer="91">Yellow pot 2</text>
-<text x="53.34" y="91.44" size="1.778" layer="91">Green pot 2</text>
+<text x="-5.08" y="114.3" size="1.778" layer="91">Red pot 2</text>
+<text x="2.54" y="106.68" size="1.778" layer="91">Yellow pot 2</text>
+<text x="15.24" y="104.14" size="1.778" layer="91">Green pot 2</text>
+<text x="25.4" y="101.6" size="1.778" layer="91">Red pot 1</text>
+<text x="40.64" y="93.98" size="1.778" layer="91">Yellow pot 1</text>
+<text x="53.34" y="91.44" size="1.778" layer="91">Green pot 1</text>
 <text x="236.22" y="91.44" size="1.778" layer="91">GND
-RAW
+5V
 Red 1
 Yel 1
 Grn 1
@@ -2819,9 +2816,10 @@ Red 2
 Yel 2
 Grn 2</text>
 <text x="101.6" y="127" size="1.778" layer="91">USB End</text>
+<text x="157.48" y="17.78" size="3.81" layer="94" font="vector">Seth Neumann, Earl Girbovan</text>
 </plain>
 <instances>
-<instance part="FRAME1" gate="G$1" x="-25.4" y="-10.16"/>
+<instance part="FRAME1" gate="G$1" x="-25.4" y="-10.16" smashed="yes"/>
 <instance part="FRAME1" gate="G$2" x="147.32" y="-10.16" smashed="yes">
 <attribute name="LAST_DATE_TIME" x="160.02" y="-8.89" size="2.54" layer="94"/>
 <attribute name="SHEET" x="233.68" y="-8.89" size="2.54" layer="94"/>
@@ -2846,7 +2844,6 @@ Grn 2</text>
 <instance part="SUPPLY4" gate="G$1" x="162.56" y="152.4"/>
 <instance part="SUPPLY8" gate="G$1" x="208.28" y="165.1"/>
 <instance part="SUPPLY9" gate="G$1" x="218.44" y="165.1"/>
-<instance part="SUPPLY10" gate="G$1" x="203.2" y="40.64"/>
 <instance part="SUPPLY11" gate="G$1" x="76.2" y="83.82"/>
 <instance part="GND4" gate="1" x="144.78" y="63.5"/>
 <instance part="GND6" gate="1" x="17.78" y="-5.08"/>
@@ -2875,8 +2872,6 @@ Grn 2</text>
 <instance part="GND15" gate="1" x="45.72" y="58.42"/>
 <instance part="SUPPLY17" gate="G$1" x="45.72" y="81.28"/>
 <instance part="R6" gate="G$1" x="45.72" y="71.12"/>
-<instance part="SUPPLY18" gate="G$1" x="236.22" y="175.26"/>
-<instance part="SUPPLY19" gate="G$1" x="228.6" y="175.26"/>
 <instance part="S4" gate="G$1" x="170.18" y="73.66" smashed="yes" rot="R90">
 <attribute name="NAME" x="167.64" y="71.12" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="175.26" y="60.96" size="1.778" layer="96" rot="R90"/>
@@ -3006,21 +3001,6 @@ Grn 2</text>
 <wire x1="228.6" y1="132.08" x2="228.6" y2="129.54" width="0.3048" layer="91"/>
 </segment>
 </net>
-<net name="RAW" class="0">
-<segment>
-<pinref part="NANO" gate="G$1" pin="RAW"/>
-<wire x1="7.62" y1="12.7" x2="17.78" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="17.78" y1="12.7" x2="88.9" y2="12.7" width="0.3048" layer="91"/>
-<wire x1="88.9" y1="12.7" x2="88.9" y2="83.82" width="0.3048" layer="91"/>
-<pinref part="J1" gate="G$1" pin="1"/>
-<junction x="17.78" y="12.7"/>
-</segment>
-<segment>
-<pinref part="J2" gate="G$1" pin="2"/>
-<wire x1="223.52" y1="109.22" x2="213.36" y2="109.22" width="0.3048" layer="91"/>
-<junction x="223.52" y="109.22"/>
-</segment>
-</net>
 <net name="5V" class="1">
 <segment>
 <pinref part="SUPPLY12" gate="G$1" pin="5V"/>
@@ -3043,6 +3023,14 @@ Grn 2</text>
 <pinref part="SUPPLY9" gate="G$1" pin="5V"/>
 <pinref part="D2" gate="LED" pin="A"/>
 <wire x1="218.44" y1="162.56" x2="218.44" y2="165.1" width="0.1524" layer="91"/>
+<pinref part="J2" gate="G$1" pin="2"/>
+<wire x1="223.52" y1="109.22" x2="220.98" y2="109.22" width="0.4064" layer="91"/>
+<wire x1="220.98" y1="109.22" x2="220.98" y2="134.62" width="0.4064" layer="91"/>
+<wire x1="220.98" y1="134.62" x2="231.14" y2="134.62" width="0.4064" layer="91"/>
+<wire x1="231.14" y1="134.62" x2="231.14" y2="165.1" width="0.4064" layer="91"/>
+<wire x1="231.14" y1="165.1" x2="218.44" y2="165.1" width="0.4064" layer="91"/>
+<junction x="218.44" y="165.1"/>
+<junction x="223.52" y="109.22"/>
 </segment>
 <segment>
 <pinref part="SUPPLY13" gate="G$1" pin="5V"/>
@@ -3071,6 +3059,13 @@ Grn 2</text>
 <wire x1="81.28" y1="81.28" x2="81.28" y2="91.44" width="0.3048" layer="91"/>
 <pinref part="NANO" gate="G$1" pin="5.5V"/>
 <wire x1="81.28" y1="91.44" x2="88.9" y2="91.44" width="0.3048" layer="91"/>
+<wire x1="7.62" y1="12.7" x2="17.78" y2="12.7" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="1"/>
+<wire x1="17.78" y1="12.7" x2="81.28" y2="12.7" width="0.4064" layer="91"/>
+<wire x1="81.28" y1="12.7" x2="81.28" y2="81.28" width="0.4064" layer="91"/>
+<junction x="81.28" y="81.28"/>
+<junction x="88.9" y="91.44"/>
+<junction x="17.78" y="12.7"/>
 </segment>
 <segment>
 <pinref part="SUPPLY16" gate="G$1" pin="5V"/>
@@ -3105,7 +3100,7 @@ Grn 2</text>
 <wire x1="218.44" y1="154.94" x2="218.44" y2="152.4" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="D10" class="0">
 <segment>
 <pinref part="NANO" gate="G$1" pin="D10"/>
 <pinref part="R7" gate="G$1" pin="1"/>
@@ -3114,7 +3109,7 @@ Grn 2</text>
 <junction x="121.92" y="114.3"/>
 </segment>
 </net>
-<net name="N$3" class="0">
+<net name="D11" class="0">
 <segment>
 <pinref part="NANO" gate="G$1" pin="D11"/>
 <wire x1="121.92" y1="116.84" x2="157.48" y2="116.84" width="0.3048" layer="91"/>
@@ -3126,7 +3121,7 @@ Grn 2</text>
 <junction x="121.92" y="116.84"/>
 </segment>
 </net>
-<net name="N$5" class="0">
+<net name="D12" class="0">
 <segment>
 <pinref part="NANO" gate="G$1" pin="D12"/>
 <wire x1="121.92" y1="119.38" x2="147.32" y2="119.38" width="0.3048" layer="91"/>
@@ -3164,25 +3159,25 @@ Grn 2</text>
 <junction x="88.9" y="104.14"/>
 </segment>
 </net>
-<net name="A4" class="0">
+<net name="A6" class="0">
 <segment>
 <wire x1="38.1" y1="81.28" x2="38.1" y2="96.52" width="0.3048" layer="91"/>
 <pinref part="R5" gate="G$1" pin="S"/>
 <pinref part="NANO" gate="G$1" pin="A6"/>
 <wire x1="38.1" y1="96.52" x2="88.9" y2="96.52" width="0.3048" layer="91"/>
+<junction x="88.9" y="96.52"/>
 </segment>
 </net>
-<net name="A5" class="0">
+<net name="A7" class="0">
 <segment>
 <wire x1="50.8" y1="71.12" x2="50.8" y2="93.98" width="0.3048" layer="91"/>
 <pinref part="R6" gate="G$1" pin="S"/>
 <wire x1="50.8" y1="93.98" x2="88.9" y2="93.98" width="0.3048" layer="91"/>
 <pinref part="NANO" gate="G$1" pin="A7"/>
-<wire x1="88.9" y1="93.98" x2="91.44" y2="93.98" width="0.3048" layer="91"/>
 <junction x="88.9" y="93.98"/>
 </segment>
 </net>
-<net name="N$6" class="0">
+<net name="D2" class="0">
 <segment>
 <pinref part="NANO" gate="G$1" pin="D2"/>
 <wire x1="121.92" y1="93.98" x2="144.78" y2="93.98" width="0.3048" layer="91"/>
@@ -3193,9 +3188,10 @@ Grn 2</text>
 <pinref part="J2" gate="G$1" pin="8"/>
 <wire x1="223.52" y1="93.98" x2="226.06" y2="93.98" width="0.3048" layer="91"/>
 <junction x="223.52" y="93.98"/>
+<junction x="121.92" y="93.98"/>
 </segment>
 </net>
-<net name="N$9" class="0">
+<net name="D3" class="0">
 <segment>
 <pinref part="NANO" gate="G$1" pin="D3"/>
 <wire x1="121.92" y1="96.52" x2="157.48" y2="96.52" width="0.3048" layer="91"/>
@@ -3205,9 +3201,10 @@ Grn 2</text>
 <wire x1="157.48" y1="96.52" x2="223.52" y2="96.52" width="0.3048" layer="91"/>
 <junction x="157.48" y="96.52"/>
 <junction x="223.52" y="96.52"/>
+<junction x="121.92" y="96.52"/>
 </segment>
 </net>
-<net name="N$10" class="0">
+<net name="D4" class="0">
 <segment>
 <pinref part="NANO" gate="G$1" pin="D4"/>
 <wire x1="121.92" y1="99.06" x2="170.18" y2="99.06" width="0.3048" layer="91"/>
@@ -3217,9 +3214,10 @@ Grn 2</text>
 <wire x1="170.18" y1="99.06" x2="223.52" y2="99.06" width="0.3048" layer="91"/>
 <junction x="170.18" y="99.06"/>
 <junction x="223.52" y="99.06"/>
+<junction x="121.92" y="99.06"/>
 </segment>
 </net>
-<net name="N$11" class="0">
+<net name="D5" class="0">
 <segment>
 <pinref part="NANO" gate="G$1" pin="D5"/>
 <wire x1="121.92" y1="101.6" x2="182.88" y2="101.6" width="0.3048" layer="91"/>
@@ -3229,9 +3227,10 @@ Grn 2</text>
 <wire x1="182.88" y1="101.6" x2="223.52" y2="101.6" width="0.3048" layer="91"/>
 <junction x="182.88" y="101.6"/>
 <junction x="223.52" y="101.6"/>
+<junction x="121.92" y="101.6"/>
 </segment>
 </net>
-<net name="N$12" class="0">
+<net name="D6" class="0">
 <segment>
 <pinref part="NANO" gate="G$1" pin="D6"/>
 <wire x1="121.92" y1="104.14" x2="193.04" y2="104.14" width="0.3048" layer="91"/>
@@ -3242,9 +3241,10 @@ Grn 2</text>
 <pinref part="J2" gate="G$1" pin="4"/>
 <wire x1="223.52" y1="104.14" x2="226.06" y2="104.14" width="0.3048" layer="91"/>
 <junction x="223.52" y="104.14"/>
+<junction x="121.92" y="104.14"/>
 </segment>
 </net>
-<net name="N$13" class="0">
+<net name="D7" class="0">
 <segment>
 <pinref part="NANO" gate="G$1" pin="D7"/>
 <wire x1="121.92" y1="106.68" x2="203.2" y2="106.68" width="0.3048" layer="91"/>
@@ -3255,6 +3255,7 @@ Grn 2</text>
 <pinref part="J2" gate="G$1" pin="3"/>
 <wire x1="223.52" y1="106.68" x2="226.06" y2="106.68" width="0.3048" layer="91"/>
 <junction x="223.52" y="106.68"/>
+<junction x="121.92" y="106.68"/>
 </segment>
 </net>
 <net name="N$17" class="0">
@@ -3263,6 +3264,7 @@ Grn 2</text>
 <wire x1="218.44" y1="142.24" x2="218.44" y2="111.76" width="0.3048" layer="91"/>
 <pinref part="NANO" gate="G$1" pin="D9"/>
 <wire x1="218.44" y1="111.76" x2="121.92" y2="111.76" width="0.3048" layer="91"/>
+<junction x="121.92" y="111.76"/>
 </segment>
 </net>
 </nets>
